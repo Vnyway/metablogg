@@ -1,8 +1,13 @@
 import React from "react";
-import Header from "../components";
+import Header, { Posts } from "../components";
+import { posts } from "../constants";
 
 const Home = () => {
-  return <main>Home</main>;
+  return (
+    <main>
+      <Posts shownPosts={posts} />
+    </main>
+  );
 };
 
 export default Home;
