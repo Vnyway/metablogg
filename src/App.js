@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { Footer, Header } from "./components";
-import { Home } from "./pages";
+import { Home, Login } from "./pages";
 
 const Layout = () => (
   <>
@@ -16,6 +16,7 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
