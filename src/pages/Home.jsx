@@ -1,5 +1,5 @@
 import React from "react";
-import Header, { Posts } from "../components";
+import { Posts } from "../components";
 import { posts } from "../constants";
 
 const Home = () => {
